@@ -1,0 +1,52 @@
+---
+title: "skangagani"
+author: "Augustine Malija"
+date: "11/27/2020"
+output: html_document
+---
+# Step 1 : Loading Necessary Packages
+```{r setup, include=FALSE}
+#installing required packages
+library(devtools) # for supporting aspects of package development
+library(roxygen2) # for providing helper functions to load my package
+```
+
+# Step 2: Creating my Package Directory with the Project's File Path
+```{r}
+create_package("C:/Users/Gus/Documents/GitHub/skangagani", open = FALSE)
+```
+
+# Step 3: Adding Funtions and their Documentations
+
+```{r}
+#saving the function as an R file
+use_r("moto")
+use_r("npawa")
+```
+
+
+
+```{r document-moto, eval = FALSE}
+#creating documentation for moto
+document()
+```
+
+
+```{r}
+#previewing my help file
+?moto
+?npawa
+```
+
+# Step 5: Installing
+```{r}
+#setting to a parent working directory containing the package folder
+setwd("C:/Users/Gus/Documents/GitHub") 
+install("skangagani")
+```
+\ Step 6: Testing
+```{r}
+setwd("C:/Users/Gus/Documents/GitHub/skangagani")
+check()
+```
+
