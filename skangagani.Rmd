@@ -44,9 +44,19 @@ document()
 setwd("C:/Users/Gus/Documents/GitHub") 
 install("skangagani")
 ```
-\ Step 6: Testing
+# Step 6: Testing
 ```{r}
 setwd("C:/Users/Gus/Documents/GitHub/skangagani")
 check()
+```
+
+#Adding a License
+```{r}
+use_mit_license(" Augustine Malija")
+```
+
+```{r}
+use_readme_rmd("skangagani")
+
 ```
 
